@@ -9,4 +9,4 @@ DB_URI = (
     f"{os.getenv('DB_HOST')}:"
     f"{os.getenv('DB_PORT')}/"
     f"{os.getenv('DB_NAME')}"
-)
+) 

@@ -3,4 +3,4 @@ requests
 sqlalchemy
 psycopg2-binary
 apache-airflow
-python-dotenv
+python-dotenv 
