@@ -1,0 +1,82 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# ==========================
+# Environment variables
+# ==========================
+.env
+.env.*
+
+# ==========================
+# Logs
+# ==========================
+logs/
+*.log
+
+# Airflow logs (if local)
+airflow/logs/
+
+# ==========================
+# IDE files
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================
+# OS files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Database files
+# ==========================
+*.db
+*.sqlite3
+
+# ==========================
+# Airflow
+# ==========================
+airflow.cfg
+airflow.db
+webserver_config.py
+
+# ==========================
+# Docker
+# ==========================
+*.env
+docker-compose.override.yml
+
+# ==========================
+# Testing / coverage
+# ==========================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ==========================
+# Misc
+# ==========================
+*.bak
+*.tmp
