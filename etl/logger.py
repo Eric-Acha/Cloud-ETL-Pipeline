@@ -1,4 +1,8 @@
 import logging
+import os
+
+# Ensure logs directory exists
+os.makedirs("logs", exist_ok=True)
 
 logging.basicConfig(
     filename="logs/etl.log",
