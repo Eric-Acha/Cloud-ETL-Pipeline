@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+
+  postgres:
+    image: postgres:15
+    container_name: etl_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: etl_user
+      POSTGRES_PASSWORD: etl_password
+      POSTGRES_DB: etl_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  etl_app:
+    build: .
+    container_name: etl_pipeline
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: etl_user
+      DB_PASSWORD: etl_password
+      DB_NAME: etl_db
+    volumes:
+      - ./logs:/app/logs
+    command: python main.py
+
+volumes:
+  postgres_data:
