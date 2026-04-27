@@ -1,6 +1,6 @@
 # Cloud ETL Pipeline
 
-A containerized ETL (Extract, Transform, and Load) pipeline built with Python that ingests product data from a REST API, transforms the data, and loads it into a PostgreSQL database. The project is designed using Docker for portability and prepared for future cloud deployment.
+A containerized ETL (Extract, Transform, & Load) pipeline built with Python that ingests product data from a REST API, transforms the data, and loads it into a PostgreSQL database. The project is designed using Docker for portability and prepared for future cloud deployment.
 
 ## Project Overview
 
